@@ -10,3 +10,29 @@
 .blueColor{
   color: blue;
 }
+
+.img1{
+height: 50%;
+width: 50%;
+}
+
+.imagenes{
+  width: 80px;
+  height: 70%;
+  padding: 5%;
+}
+
+.card{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 22px;
+}
+
+#itemDetail{
+  margin: 0%;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+}
