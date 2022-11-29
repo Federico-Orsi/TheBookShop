@@ -1,12 +1,18 @@
-import { MdLocalGroceryStore } from 'react-icons/md';
 import { Badge } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from './CartContext';
+
 
 const CartWidget = () => {
-    return (
+   
+  const {badgeCounter} = useContext(CartContext);  
+  
+  return (
       <>
-      <Badge badgeContent={5} color="primary">
+      <Badge badgeContent={badgeCounter()} color="primary">
       
-      <i className="bi bi-cart4" color="action"></i>
+      <Link className='text-light' to="/cart"><i className="bi bi-cart4" color="action"/></Link>
       </Badge>
       
       

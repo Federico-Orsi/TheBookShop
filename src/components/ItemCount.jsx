@@ -1,20 +1,23 @@
-import { useState } from 'react';
+import { useContext } from 'react';
+
 import Button from 'react-bootstrap/Button';
+import { CartContext } from './CartContext';
 
 
- export const ItemCount = () => {
+
+
+export const ItemCount = () => {
     
-  const [counter, setCounter] = useState (0) ;
-  
+ const {counter, setCounter} = useContext(CartContext);
+ 
   
   const sumar = () =>{
-
-    setCounter(counter + 1)
+   setCounter(counter + 1)
+    
   }
 
   const restar = () =>{
-
-    setCounter(counter - 1)
+    counter > 0    &&   setCounter(counter - 1);
   }
  
 
@@ -22,8 +25,10 @@ import Button from 'react-bootstrap/Button';
   return (
       <>
       
+      
+      
       <Button variant="secondary" className='me-2' onClick={sumar} >+</Button>{' '}
-      <div>{counter}</div>
+      <span>{counter}</span>
       <Button variant="secondary" className='ms-2' onClick={restar}>-</Button>{' '}
       </>
     );

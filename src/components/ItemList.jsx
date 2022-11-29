@@ -15,7 +15,7 @@ export const ItemList = ({items}) => {
          <div className="card">
          {
           items.length > 0 ?
-          items.map(item => <Item key={item.id} id={item.id} name={item.name} description={item.description} picture={item.image} price={item.cost} stock={item.stock}/>)
+          items.map(item => <Item key={item.id} id={item.id} name={item.name} description={item.description} picture={item.picture} price={item.price} stock={item.stock}/>)
           : <p>Loading...</p>
          }
          </div>
