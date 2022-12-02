@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# The Book-Shop 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+### Comenzando 🚀
 
-### `npm start`
+Este Proyecto fue creado con CRA [Create React App].
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screen Views
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Al comienzo en la vista inicial de esta App se muestra el catálogo completo de libros disponibles.
 
-### `npm run build`
+<img width="946" alt="image" src="https://user-images.githubusercontent.com/106777809/205383310-8fc0e30b-aa3f-4fa6-a9e6-838277fc8f6e.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Luego haciendo click en Detalle, se muestra la descripción de cada libro y da la posibilidad de agregar unidades al carrito.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="922" alt="image" src="https://user-images.githubusercontent.com/106777809/205384383-7f3c4bad-d493-4c99-8a01-8f3d3056d374.png">
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Finalmente en el Carrito se muestra el resumen de la posible compra, con la info de cada item, la posibilidad de eliminar elementos y un resumen final de la compra, discriminando los impuestos(IVA) y mostrando el boton de finalizar compra, el cual luego le brindará al usuario el ID de su orden.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img width="944" alt="image" src="https://user-images.githubusercontent.com/106777809/205384657-d5342d49-f242-48fb-bca0-7d7eb6c3c6df.png">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment 📦
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Al momento este Proyecto aún no ha sido Deployado. La intención es luego subirlo a Netlify.
 
-### Code Splitting
+## Construido con 🛠️
+* [React JS](https://es.reactjs.org/)
+* [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+* [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Autor ✒️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* **Federico Antonio Orsi** - *Front End React Developer*, 2 de Diciembre de 2022 - [Federico A. Orsi](https://github.com/Federico-Orsi)
 
-### Making a Progressive Web App
+## Licencia 📄
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Eres libre de revisar/estudiar/forkear/clonar/mejorar este proyecto. Se agradece citar esta fuente cuando uses este proyecto.
 
-### Advanced Configuration
+## Greetings!! 🎁
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Comenta a tod@s sobre este proyecto 📢
+* Da las gracias públicamente 🤓.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+---
+⌨️ Hecho por [Federico A. Orsi](https://github.com/Federico-Orsi) 😊
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
