@@ -13,13 +13,22 @@ import Swal from 'sweetalert2';
 
 export const ContainerCart = () => {
     
-    const {cartArray, calcularSubTotal, calcTotalFinal, calcularIva} = useContext(CartContext);   
+    const {cartArray, setCartArray, calcularSubTotal, calcTotalFinal, calcularIva} = useContext(CartContext);   
    
+    
     const createOrder = () =>{
 
+     cartArray.forEach(async(item) => {
+      const docRef = doc(db, "Products", item.itemIDfb);
+      await updateDoc(docRef, {
+      stock: increment(-item.itemQty)
+      })
+   
+   });
+ 
    const order = {
-
-   Buyer: {
+    
+    Buyer: {
     name: "Max Power",
     phone: "1558157314",
     email: "maxpower@gmail.com",
@@ -52,17 +61,8 @@ export const ContainerCart = () => {
    setOrderFireBase()
    .then(response => Swal.fire({
     icon: 'success',
-    title: `Su Order ID es ${response.id}`}),
-
-    cartArray.forEach(async(elem) => {
-    const docRef = doc(db, "Products", elem.itemId);
-    await updateDoc(docRef, {
-    stock: increment(-elem.itemQty)
-    });
-  
-  })
- 
-    
+    title: `Su pedido fue procesado exitosamente!! El ID de su Orden es: ${response.id}`}),
+    setCartArray([])
     )
     .catch(error => console.log(error))
 
@@ -80,7 +80,7 @@ export const ContainerCart = () => {
         {
 
 cartArray.length > 0 &&       
-<Card style={{ width: '80%'}} className="d-flex justify-content-center">
+<Card style={{ width: '120%'}} className="d-flex justify-content-center text-center">
  
  <Card.Body>
   <Card.Title>Resumen de su Compra</Card.Title>

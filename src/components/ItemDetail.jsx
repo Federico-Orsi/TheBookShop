@@ -61,7 +61,7 @@ export function ItemDetail({item}) {
         </Card.Text>
         
         
-      <ItemCount   />   
+      <ItemCount  Stock={item.stock} />   
       </Card.Body>
       <Button variant="primary">Stock disponible: {item.stock} unidades</Button>
       </Card>

@@ -1,5 +1,4 @@
 import CartWidget from './CartWidget';
-import { ContainerRenderizado } from '../components/ContainerRenderizado';
 import { Link } from 'react-router-dom';
          
 

@@ -38,6 +38,12 @@ width: 50%;
   
 }
 
+.hoover:hover{
+  color: yellow;
+  cursor: pointer;
+  
+}
+
 /* cart */
 
 .cardContainerCart{

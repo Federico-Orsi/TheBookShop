@@ -6,13 +6,13 @@ import { CartContext } from './CartContext';
 
 
 
-export const ItemCount = () => {
+export const ItemCount = ({Stock}) => {
     
  const {counter, setCounter} = useContext(CartContext);
  
   
   const sumar = () =>{
-   setCounter(counter + 1)
+    counter < Stock    && setCounter(counter + 1)
     
   }
 

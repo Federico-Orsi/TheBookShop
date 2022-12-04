@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { ItemDetail } from '../components/ItemDetail';
 import { collection, getDocs } from "firebase/firestore";
 import Button from 'react-bootstrap/Button';
+import Footer from '../components/Footer';
 
 import {db} from '../utils/firebaseConfig';
 
@@ -16,11 +17,13 @@ import {db} from '../utils/firebaseConfig';
   useEffect (() => { async function fetchData()
  { 
   const querySnapshot = await getDocs(collection(db, "Products"));
-  const datosFireBase = querySnapshot.docs.map(item => item.data());
-  const datosFireBaseConFind = datosFireBase.find(item => item.id == itemID);
+  const datosFireBase = querySnapshot.docs.map(item => {return {...item.data(), IDfb:item.id}});
+  const datosFireBaseConFind = datosFireBase.find(item => item.IDfb == itemID);
   setDato(datosFireBaseConFind);
 }  fetchData();
- } , [])
+ 
+
+} , [])
  
   
 
@@ -32,6 +35,7 @@ import {db} from '../utils/firebaseConfig';
       <>
       
       <ItemDetail item={dato}/>
+      <Footer/>
       
       </>
     );

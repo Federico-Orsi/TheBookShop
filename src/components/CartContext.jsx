@@ -24,7 +24,8 @@ export const CartContextProvider = (props) => {
     itemName:item.name,
     itemImg:item.picture,
     itemPrice:item.price,
-    itemQty:qty
+    itemQty:qty,
+    itemIDfb:item.IDfb,
 }
 
 ]);

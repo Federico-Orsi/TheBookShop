@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ContainerCart from './ContainerCart';
+import Footer from '../components/Footer';
 
 
 
@@ -51,7 +52,7 @@ export const Carrito = () => {
 
 )
 :
-<p>I'm a fucking empty Cart!!</p>
+<p>I'm a little poor empty Cart!!</p>
 }
 </div>
 
@@ -59,8 +60,11 @@ export const Carrito = () => {
 </section>
 
 
-  
-        
+{
+ cartArray.length > 0 && 
+ <Footer/>
+}
+         
      
      
      
